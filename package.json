@@ -1,0 +1,23 @@
+{
+  "name": "javascripty-main",
+  "version": "1.0.0",
+  "description": "tutorial de javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicolasdepaulla/javascript.git"
+  },
+  "author": "Nicolas de Paula Pacheco",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nicolasdepaulla/javascript/issues"
+  },
+  "homepage": "https://github.com/nicolasdepaulla/javascript#readme",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "readline-sync": "^1.4.10"
+  }
+}

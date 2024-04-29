@@ -1,2 +1,0 @@
-# javaScripty
-tutorial de javaScript

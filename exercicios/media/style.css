@@ -1,0 +1,10 @@
+/**
+Folha de estilo - Simulador
+@author Nicolas de Paula Pacheco
+*/
+/** layout */
+
+.container {
+    margin: 50px 0px;
+    text-align: center;
+}

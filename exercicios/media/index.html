@@ -1,21 +1,32 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Boletim dos alunos</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/aprovado.png" type="image">
 </head>
-
 <body>
     <div class="container">
-    <form name="frmmedia">
-        <input type="text" name="txtteste">
-        <input type="button" value="teste" onclick="testar()">
-    </form>
-</div>
-    <script src="logica.js"></script>
-</body>
+        <h1>média das notas</h1>
+        <img src="img/professora.jpg" alt="flex" id="status">
+        <form name="frmflex">
+            <input type="number" name="textn1" size="8" placeholder="" class="caixa">
+            <br>
+            <input type="number" name="textn2" size="8" placeholder="" class="caixa">
+            <br>
+            <input type="number" name="textn3" size="8" placeholder="" class="caixa">
+            <br>
+            <input type="number" name="textn4" size="8" placeholder="" class="caixa">
+            <br>
+            <input type="button" value="calcular" onclick="calcular()">
+            <br>
+            <input type="reset" value="limpar" onclick="limpar()">
+        </form>
+        </div>
 
+        <script src="logica.js"></script>
+
+</body>
 </html>

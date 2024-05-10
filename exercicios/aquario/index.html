@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora de Volume do Aquário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Volume do Aquário</h1>
+        <label for="comprimento">Comprimento (cm):</label>
+        <input type="number" id="comprimento" placeholder="Insira o comprimento">
+        
+        <label for="largura">Largura (cm):</label>
+        <input type="number" id="largura" placeholder="Insira a largura">
+        
+        <label for="altura">Altura (cm):</label>
+        <input type="number" id="altura" placeholder="Insira a altura">
+        
+        <button onclick="calcularVolume()">Calcular Volume</button>
+        
+        <div class="result" id="resultado"></div>
+    </div>
+
+    <script src="aquario.js"></script>
+</body>
+</html>

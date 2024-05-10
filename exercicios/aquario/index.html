@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora de Volume de Aquário</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Volume de Aquário</h1>
+        <form id="volumeForm">
+            <label for="comprimento">Comprimento em centímetros:</label>
+            <input type="number" id="comprimento" name="comprimento" required>
+            
+            <label for="largura">Largura em centímetros:</label>
+            <input type="number" id="largura" name="largura" required>
+            
+            <label for="altura">Altura em centímetros:</label>
+            <input type="number" id="altura" name="altura" required>
+            
+            <button type="button" onclick="calcularVolume()">Calcular Volume</button>
+        </form>
+        
+        <div class="resultado" id="resultado">
+            Insira as dimensões e clique em calcular para obter o volume do aquário.
+        </div>
+    </div>
+    <script src="aquario.js"></script>
+</body>
+</html>

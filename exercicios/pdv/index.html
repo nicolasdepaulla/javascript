@@ -5,11 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PDV</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>PDV</h1>
+    
     <form name="frmpdv">
+        <h1>PDV</h1>
     <input type="text" name="txtTotal" placeholder="Total">
 
     <input type="text" name="txtPorcentagem" placeholder="% Desconto" size="10">
@@ -19,7 +21,8 @@
     <hr>
     <input type="text" name="txtvalorPago" placeholder="Valor pago em dinheiro">
     <p><input type="button" value="Calcular troco"></p>
-    <input type="text" name="txtTroco">    
+    <input type="text" name="txtTroco">
+    <input type="reset" value="limpar" onclick="limpar()">    
 </form>
 </body>
 <script src="desconto.js"></script>

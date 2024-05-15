@@ -1,0 +1,7 @@
+Atividade de avaliação
+Desenvolver um WEB APP de ponto de vendas, conforme orientações e (index.html)
+Criar uma folha de estilo formatando o html responsivo (livre design)
+Pensar na experiência do usuário (UX)
+- validações
+- botão limpar
+- etc

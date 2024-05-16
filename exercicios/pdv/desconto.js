@@ -3,28 +3,23 @@
  * @author Nicolas de Paula Pacheco
  */
 
-let total, desconto, pago, troco
-function calcular() {
-    total = Number(frmflex.txtTotal.value)
-    desconto = Number(frmflex.txtPorcentagem.value)
-    pago = Number(frmflex.txtvalorPago.value)
-    troco = Number(frmflex.txtTroco.value)
+let totalC, desc, Pago, end
 
-    const total = (total)
-    const desconto = (desconto)
+function total() {
+    totalC = Number(frmPdv.txtTotal.value)
+    desc = Number(frmPdv.txtPorcentagem.value)
 
-    //validação de campos obrigatorio
-    if (frmflex.txtTotal.value === "") {
-        frmflex.txtTotal.value.focus()
-    } else if (frmflex.txtPorcentagem.value === "") {
-        frmflex.txtPorcentagem.value.focus()
-    } else if (frmflex.txtvalorPago.value === "") {
-        frmflex.txtvalorPago.value.focus()
-    } else if (frmflex.txtTroco.value === "") {
-        frmflex.txtTroco.value.focus()
-    }
-    
+    let totalDesconto = (totalC * desc) / 100
+    end = totalC - totalDesconto
+
+    frmPdv.txtDesconto.value = `${totalDesconto}`
+    frmPdv.txtTotalDesconto.value = `${end}`
 }
-function limpar() {
-    document.getElementById('status').src = "imgg/flex.png"
+
+function calcularTroco() {
+    Pago = Number(frmPdv.txtValorPago.value)
+    end = Number(frmPdv.txtTotalDesconto.value)
+    let trocoFinal = Pago - end
+
+    frmPdv.txtTroco.value = `${trocoFinal}`
 }

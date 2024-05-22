@@ -5,7 +5,7 @@ folha de estilo - cartas
 
 /* layout */
 
-*{
+* {
     margin: 0;
     padding: 0;
     border: 0;
@@ -49,7 +49,8 @@ button {
     background-color: #f0f0f0;
     border: 1px solid #000000;
     border-radius: 10px;
-    position: relative; /*referencia alinhamento */
+    position: relative;
+    /*referencia alinhamento */
     margin-bottom: 50px;
 
 }
@@ -66,16 +67,17 @@ button {
 
 #supEsq {
     top: 20px;
-    left: 15px;
+    left: 20px;
     text-align: left;
 }
 
 #infDir {
-    font-size: 1.0em;
-    bottom: 20px;
-    left: 15px;
+    font-size: 1.5em;
+    bottom: 13px;
+    left: 20px;
     text-align: right;
-   
+
+
 }
 
 .Face {
@@ -84,10 +86,16 @@ button {
     justify-content: center;
     height: 100%;
     font-size: 6em;
-    
+
 }
 
 
-.img{
-    background-color: aqua;
+
+
+button {
+    background-color: #fdfdfc;
+}
+
+button:hover {
+    background-color: #696765;
 }

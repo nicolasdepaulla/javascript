@@ -77,6 +77,8 @@ function sortearCarta() {
             ('supEsq').innerHTML = `<p>mewtwo ❁</p>`
         document.getElementById
             ('infDir').innerHTML = `<p>Thunderbolt 110 PTS</p>`
+            
+
         document.getElementById('centro').style.backgroundColor = 'purple';
         
 

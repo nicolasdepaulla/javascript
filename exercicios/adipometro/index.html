@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Percentual de Gordura</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Calculadora de Percentual de Gordura</h1>
+
+        <form id="fatCalculator">
+
+            <label for="gender">Gênero:</label>
+            <select id="gender" name="gender" required>
+                <option value="male">Masculino</option>
+                <option value="female">Feminino</option>
+            </select>
+
+            <label for="age">Idade:</label>
+            <input type="number" id="age" name="age" required>
+
+            <label for="triceps">Tríceps (mm):</label>
+            <input type="number" id="triceps" name="triceps" required>
+
+            <label for="biceps">Bíceps (mm):</label>
+            <input type="number" id="biceps" name="biceps" required>
+
+            <label for="subscapular">Subescapular (mm):</label>
+            <input type="number" id="subscapular" name="subscapular" required>
+
+            <label for="suprailiac">Suprailíaca (mm):</label>
+            <input type="number" id="suprailiac" name="suprailiac" required>
+
+            <div class="button-container">
+                <button type="button" onclick="calculateBodyFat()">Calcular</button>
+                <button type="reset">Limpar</button>
+            </div>
+        </form>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de Percentual de Gordura</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -36,15 +36,15 @@
             <input type="number" id="suprailiac" name="suprailiac" required>
 
             <div class="button-container">
-                <button type="button" onclick="calculateBodyFat()">Calcular</button>
-                <button type="reset">Limpar</button>
+                <button type="button" onclick="calcularGordura()">Calcular</button>
+                <button type="reset" onclick="limpar()">Limpar</button>
             </div>
         </form>
 
         <div id="result"></div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="adipometro.js"></script>
 </body>
 
 </html>

@@ -1,168 +1,52 @@
-Aula 1...............................................................................................................................................
-Na linguagem js o ; e opcional
-Podemos usar "" ou '' só não Podemos misturar "'
-console.log //Escrever no terminal
-console.clear() //limpar a tela
-Dicas "" Texto '' Impostações 
-
-nas estrturas de contrple condicional e nos lanços de repetição
-Podemosc omitir as chaves, porem so uma linha de codigo e vincula
-Dicas: nao omitir as chaves 
-
-Variaveis na linguagem JS são dinamicamente tipadas 
-somente 3 tipos (string, number e boolean)
-para declrar uma constante ou Variaveil podemos usar:
-const, var e let 
-var (obsoleto - não usar, pois pode gerar bug no projeto)
-
-string :
-.repace(",",",") //substitui um caractere por outro
-
-concatenação (unir texto com conteúdo de Variaveis)
-+ (evitar o uso devido a tipagem dinãmico)
-'${} (mais usado na linguagem JS)
-
-number:
-
-number(converte para o tipo numerico)
-number.isinteger (verifica se um numero e inteiro ou nao)
-
-BOOLEANS
-So
-
-aula 02>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-Operadores aritméticos
-ATENÇÃO  a regra de precedência:
-1º)Parênteses
-2º)multiplicação
-3º)divisão
-4º)soma
-5º)subtração
-
-comparadores:
-observação importante:
-NÃO usar os comparadores == != (riscos devido a)
-
--------------------------------------------------
-NPM (node package manager)
-Gerenciador de pacotes node(pacotes com funcionalidades que
-podem ser adicionadas ao node)
-Para gerenciar(versão,atualizaçôes etc.) os pacotes node,
-é necessário configurar o package.json
-
-json(javaScript Object notation)
-NPM -version
-NPM ls (listar pacotes instalados)
-NPM i (instalar um pacote)
-NPM r (remover um pacote)
-
-observação: os pacotes são instalados no projeto(raiz)
-
-passo 1 - cria o arquivo package.json
-NPM init 
-
-repositório de pacotes 
-https://www.npmjs.com/
-
-exercicio:
-Criar no console javaScript um APP para calcular a porcentagem,usando a regra de 3,
-conforme modelo:
-
-10% de 200 = 20
-x       y      valor
-
-dedução da fórmula para calcular porcentagem usando regra de 3
-
-200 ------------------- 100%
-            x 
-valor ----------------- 10%
-
-valor x 100 = 200 x 10
+Ligação do Banco de dados MongoDB com o Electron
 
 
-valor x 100 = 2000
+passo 1: 
+Ter um servidor de banco de dados com o Electron 
+- localhost (instalado com o windows) | só para desenvolvimento 
+- físico (baseado no Linux) em uma rede local (switch) (sistemas desktop)
+- nuvem (Atlas(free 540mb AWS)) (backend (netflix, e-comerce etc.))
 
-              2000
-valor = ---------------
-               100
+passo 2:
+Instalar o mongoose (framework para trabalhar o MongoDB)
 
-valor = 20
-        --
-         1
+passo 3:
+Criar um arquivo database.js na raiz e configurar a conexão com o banco de dados
 
-valor = 20
+passo 4:
+Importar no main.js, os métodos para conectar e disconectar o banco de dados
 
+passo 5:
+Na janela principal(main.js), deixar o objeto win público 
+ex:const win (errado) let win (x)
 
-Variaveis:
-3 Variaveis: x y valor
+passo 6:
+Criar uma função para verificar o 
+status de conexão (criar após a última linha do main.js) este passo poderia estar 
+junto com o app.whenReady(), por uma questão de organização e melhor entendimento
+foi criado fora
 
-entrada:
-x,y
+passo 7:
+dentro de app.whenReady()
+executar a função statusConexao()
 
-processamento:
-valor = (x * y) / 100
+passo 8:
+Importante! dentro de app.whenReady()
+criar um método para desconectar o banco de dados ao encerrar a janela principal
 
-saida:
-valor
+passo 9:
+Usar preload.js e IPC (ipcRenderer e ipcMain) para criar uma regra que
+permita modificar o ícone do banco de dados
 
+passo 10:
+Criar a pasta models
 
---------------------------
-Funções:
-Função é um bloco de código reutilizável
-Função simples:
-function none() {
-        
-}
-função cpm retorno
-function nome(){
-        return
-}
+passo 11:
+- Criar o modelo para clientes
+Cliente.js (Primeira letra maiúscula(Classe modelo))
 
-funções anônimas
-const nome = function (){
+passo 12:
+Importar o Schema no main.js
 
-}
-let nome = function () {
-
-}
-
-funções em javaScript moderno podem ser simplificadas
-
-
-
-
-
----------------------------------------------------------
-obs:
-typeof //verifica a tipagem dinâmica
-tipos primitivos (string, number, e boolean)
-function
-object
-
-______________________________________________________________
-
-POO - programação Orientada a objetos
-
-Pilares:
-- abstração
-- Herança
-- pólimorfismo
-- Encapsulamento
-
-
-ATENÇÃO!
-Toda classe modelo, inicia com uma letra maiúscula
-
-
-
-
-IMPORTANTE!
-| | | | |  | | |  | | |  | |  || |
-new -> Indica a criação de um objeto
-this -> quando se refere a ele mesmo
-super -> indica o uso de atributos da classe pai
-pólimorfismo -> é a mudança de um comportamento de um método já existente.
-
-**** ATENÇÃO O pólimorfismo não cria outro método, ele apenas modifica o 
-comportamento de um método existente. Obrigatório usar o mesmo nome do método
-da classe pai.
+CRUD  (Create(insert),  Read(select),  Update(update),  delete(delete)):
+Seguir o slide fornecido.

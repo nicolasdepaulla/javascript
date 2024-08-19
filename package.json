@@ -1,23 +1,26 @@
 {
-  "name": "javascripty-main",
+  "name": "conest",
   "version": "1.0.0",
-  "description": "tutorial de javascript",
-  "main": "index.js",
+  "description": "Sistema para gestão de estoque!",
+  "main": "main.js",
   "scripts": {
+    "start": "electron .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nicolasdepaulla/javascript.git"
+    "url": "git+https://github.com/nicolasdepaulla/conest.git"
   },
   "author": "Nicolas de Paula Pacheco",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/nicolasdepaulla/javascript/issues"
+    "url": "https://github.com/nicolasdepaulla/conest/issues"
   },
-  "homepage": "https://github.com/nicolasdepaulla/javascript#readme",
+  "homepage": "https://github.com/nicolasdepaulla/conest#readme",
+  "devDependencies": {
+    "electron": "^31.3.1"
+  },
   "dependencies": {
-    "colors": "^1.4.0",
-    "readline-sync": "^1.4.10"
+    "mongoose": "^8.4.1"
   }
 }
